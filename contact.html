@@ -1,0 +1,85 @@
+<!DOCKTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>NAQADA COVERNMENT LANGUAGE | Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="https://fonts.googleapis.com/css2? family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/marawan%20log-Photoroom.png"></a>
+            <div class="nav-links"id="navLinks">
+                <i class="fa-solid fa-x" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showmenu()"></i>
+        </nav>
+        <h1>Contact Us</h1>
+    </section>
+<!------- contact us ---->
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3588.844667244858!2d32.7026926!3d25.9074764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x144949ee56eda9d3%3A0x522902affd983a89!2z2YXYr9ix2LPYqSDZhtmC2KfYr9ipINin2YTYsdiz2YXZitipINmE2LrYp9iq!5e0!3m2!1sar!2seg!4v1710325804449!5m2!1sar!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa-solid fa-house"></i>
+                    <span>
+                        <h5>location</h5>
+                        <p>Sheikh Hussein, Naqada City, Naqada, Qena, Naqada Center</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-phone"></i>
+                    <span>
+                        <h5>+201559052020</h5>
+                        <p>Sunday To Thursday Only</p>
+                    </span>
+                </div>
+            </div>
+<div class="contact-col">
+                <form method="post">
+                <input type="text" name="name" placeholder="Enter your name" required>
+                <input type="email" name="email" placeholder="Enter your email address" required>
+                <input type="text" name="subject" placeholder="Enter your subject" required>
+                <textarea rows="8" name="message" placeholder="Your message" required>
+                </textarea>
+                <button type="submit" class="hero-btn red-btn">SEND MESSAGE</button>
+                </form>
+            </div>
+        </div>
+    </section>
+<!------- Footer ---->
+<section class="footer">
+    <h4>ABOUT US</h4>
+    <p>Perfect School in NAQADA CENTER</p>
+    <div class="icons">
+        <p>SCHOOL:   <i class="fa-brands fa-facebook"></i> مدرسة نقادة الرسمية - لغات</p>
+    </div>
+    <p>POWERD BY <i class="fa-regular fa-heart"></i>   <i class="fa-brands fa-facebook"></i>   MARAWAN MAHMOUD ABDELMOLA</p>
+</section>
+   
+<!------JavaScript for Toggle Menu------->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        
+        function showmenu(){
+            navLinks.style.right = "0";
+        }
+        function hidemenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
