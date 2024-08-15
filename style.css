@@ -342,6 +342,10 @@ h3{
 .footer .fa-brands{
     color: blue;
 }
+.soc-ico{
+    text-decoration: none;
+    color: gray;
+}
 /*------- about us page ----*/
 .sub-header{
     height: 50vh;
