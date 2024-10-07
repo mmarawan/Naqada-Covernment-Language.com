@@ -15,6 +15,7 @@
     border-radius: 10px;
 }
 .loader {
+    z-index: 1000;
   position: fixed;
   top: 0;
   left: 0;
