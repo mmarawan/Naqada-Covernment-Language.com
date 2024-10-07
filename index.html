@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
 </head>
 <body>
+    <div class="loader"></div>
     <section class="header">
         <nav>
             <div class="nav-links"id="navLinks">
@@ -102,14 +103,14 @@
 <!-------  testimonials ---->
     
 <section class="testimonials">
-    <h1>What do Parents Say?</h1>
-    <p>parents rates</p>
+    <h1>What People Say?</h1>
+    <p>People Rates</p>
     <div class="row">
         <div class="testimonials-col">
-            <img src="images/man2%20(1).jpg">
+            <img src="Mohamed%20Hamdi.jpeg">
             <div>
-                <h3>James Mark</h3>
-                <p>It is an interesting to browse through this useful site.</p>
+                <h3>Moahmed Hamdi</h3>
+                <p>Excellent.</p>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
@@ -118,10 +119,10 @@
             </div>
         </div>
          <div class="testimonials-col">
-            <img src="images/man2%20(2).jpg">
+            <img src="Photos/Fakhry.JPG">
             <div>
-                <h3>Jack Crouse</h3>
-                <p>It is a nice and useful site.</p>
+                <h3>Fakhry</h3>
+                <p>Very very beautiful.</p>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
@@ -163,6 +164,15 @@
         function hidemenu(){
             navLinks.style.right = "-200px";
         }
+        window.addEventListener("load", () => {
+        const loader = document.querySelector(".loader");
+
+        loader.classList.add("loader--hidden");
+
+        loader.addEventListener("transitionend", () => {
+        document.body.removeChild(loader);
+        });
+        });
     </script>
 </body>
 </html>
