@@ -443,6 +443,7 @@ h3{
     width: 100%;
     border-radius: 40px;
     transition: 0.5s ease;
+    margin-top: -20px;
 }
 
 .about-col-2 h1{

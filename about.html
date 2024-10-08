@@ -17,7 +17,7 @@
                 <i class="fa-solid fa-x" onclick="hidemenu()"></i>
                 <ul>
                     <li><a href="index.html">HOME</a></li>
-                    <li><a href="about.html">ABOUT</a></li>
+                    <li class="active"><a href="about.html">ABOUT</a></li>
                     <li><a href="course.html">COURSE</a></li>
                     <li><a href="blog.html">BLOG</a></li>
                     <li><a href="contact.html">CONTACT</a></li>
@@ -26,7 +26,7 @@
             </div>
             <i class="fa-solid fa-bars" onclick="showmenu()"></i>
         </nav>
-        <h1>About Us</h1>
+        <h1 class="sub-h1">About Us</h1>
     </section>
 <!------- about us content ---->
     
@@ -57,6 +57,7 @@
 </section>
    
 <!------JavaScript for Toggle Menu------->
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
     <script>
         var navLinks = document.getElementById("navLinks");
         
@@ -75,6 +76,19 @@
         document.body.removeChild(loader);
         });
         });
+    </script>
+    <script>
+        const ScrollOption = {
+            origin: "bottom",
+            distance: "50px",
+            duration: 1000,
+        }
+        ScrollReveal().reveal(".sub-h1", {...ScrollOption, duration: 500})
+        ScrollReveal().reveal(".nav-links", {...ScrollOption, origin: "right"})
+        ScrollReveal().reveal(".about-col img", {...ScrollOption, origin: "right", duration: 500})
+        ScrollReveal().reveal(".about-col h1", {...ScrollOption, origin: "left", duration: 1500})
+        ScrollReveal().reveal(".about-col p", {...ScrollOption, origin: "left", duration: 2000})
+        ScrollReveal().reveal(".red-btn", {...ScrollOption, origin: "left", duration: 2000})
     </script>
 </body>
 </html>

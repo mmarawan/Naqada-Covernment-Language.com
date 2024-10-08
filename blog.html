@@ -19,14 +19,14 @@
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="about.html">ABOUT</a></li>
                     <li><a href="course.html">COURSE</a></li>
-                    <li><a href="blog.html">BLOG</a></li>
+                    <li class="active"><a href="blog.html">BLOG</a></li>
                     <li><a href="contact.html">CONTACT</a></li>
                     <li><a href="download.html">DOWNLOAD</a></li>
                 </ul>
             </div>
             <i class="fa-solid fa-bars" onclick="showmenu()"></i>
         </nav>
-        <h1>The benefit of the school for the student</h1>
+        <h1 class="sub-h1">The benefit of the school for the student</h1>
     </section>
 <!------- blog page content ---->
 <section class="blog-content">
@@ -109,6 +109,7 @@ School is much more fun if you have friends to hang out with. These people share
 </section>
    
 <!------JavaScript for Toggle Menu------->
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
     <script>
         var navLinks = document.getElementById("navLinks");
         
@@ -127,6 +128,21 @@ School is much more fun if you have friends to hang out with. These people share
         document.body.removeChild(loader);
         });
         });
+    </script>
+    <script>
+        const ScrollOption = {
+            origin: "bottom",
+            distance: "50px",
+            duration: 1000,
+        }
+        ScrollReveal().reveal(".nav-links", {...ScrollOption, origin: "right"})
+        ScrollReveal().reveal(".blog-right", {...ScrollOption, origin: "right", duration: 2000})
+        ScrollReveal().reveal(".blog-left img", {...ScrollOption, origin: "left", duration: 2000})
+        ScrollReveal().reveal(".blog-left h2", {...ScrollOption, origin: "left", duration: 2500})
+        ScrollReveal().reveal(".blog-left p", {...ScrollOption, origin: "left", duration: 3000})
+        ScrollReveal().reveal(".comment-box", {...ScrollOption, origin: "left", duration: 1000})
+        ScrollReveal().reveal(".comment-form", {...ScrollOption, origin: "left", duration: 1500})
+        ScrollReveal().reveal(".sub-h1", {...ScrollOption, duration: 500})
     </script>
 </body>
 </html>

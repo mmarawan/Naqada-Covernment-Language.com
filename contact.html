@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="https://fonts.googleapis.com/css2? family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
     <div class="loader"></div>
@@ -21,13 +22,13 @@
                     <li><a href="about.html">ABOUT</a></li>
                     <li><a href="course.html">COURSE</a></li>
                     <li><a href="blog.html">BLOG</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
+                    <li class="active"><a href="contact.html">CONTACT</a></li>
                     <li><a href="download.html">DOWNLOAD</a></li>
                 </ul>
             </div>
             <i class="fa-solid fa-bars" onclick="showmenu()"></i>
         </nav>
-        <h1>Contact Us</h1>
+        <h1 class="sub-h1">Contact Us</h1>
     </section>
 <!------- contact us ---->
     <section class="location">
@@ -36,14 +37,14 @@
     <section class="contact-us">
         <div class="row">
             <div class="contact-col">
-                <div>
+                <div class="con">
                     <i class="fa-solid fa-house"></i>
                     <span>
                         <h5>location</h5>
                         <p>Sheikh Hussein, Naqada City, Naqada, Qena, Naqada Center</p>
                     </span>
                 </div>
-                <div>
+                <div class="con">
                     <i class="fa-solid fa-phone"></i>
                     <span>
                         <h5>+201559052020</h5>
@@ -51,7 +52,7 @@
                     </span>
                 </div>
             </div>
-<div class="contact-col">
+<div class="contact-col coon">
                 <form action="https://api.web3forms.com/submit" method="POST">
                 <input type="hidden" name="access_key" value="8aec522b-1221-474c-af3b-d27ea0a512d6">
                 <input type="text" name="name" placeholder="Enter your name" required>
@@ -75,6 +76,7 @@
 </section>
    
 <!------JavaScript for Toggle Menu------->
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
     <script>
         var navLinks = document.getElementById("navLinks");
         
@@ -93,6 +95,18 @@
         document.body.removeChild(loader);
         });
         });
+    </script>
+    <script>
+        const ScrollOption = {
+            origin: "bottom",
+            distance: "50px",
+            duration: 1000,
+        }
+        ScrollReveal().reveal(".nav-links", {...ScrollOption, origin: "right"})
+        ScrollReveal().reveal(".location", {...ScrollOption, origin: "bottom", distance: "70px"})
+        ScrollReveal().reveal(".sub-h1", {...ScrollOption, duration: 1000})
+        ScrollReveal().reveal(".con", {...ScrollOption, origin: "left"})
+        ScrollReveal().reveal(".coon", {...ScrollOption, origin: "right", duration: 1500})
     </script>
 </body>
 </html>
